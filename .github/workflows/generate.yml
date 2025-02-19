@@ -68,11 +68,9 @@ jobs:
         shell: bash
 
       - name: Upload the demonstration site
-        id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./demo/output/www/
 
       - name: Deploy the demonstration site
-        id: deployment
         uses: actions/deploy-pages@v4
