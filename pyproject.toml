@@ -17,14 +17,3 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 where = ['.']
-
-[tool.setuptools.package-data]
-betty = [
-    'py.typed',
-    'assets/**',
-]
-
-[tool.setuptools.exclude-package-data]
-betty = [
-    '__pycache__',
-]
