@@ -14,6 +14,9 @@ jobs:
           - name: 'Python 3.13'
             os: ubuntu-latest
             python: '3.13'
+    permissions:
+      pages: write
+      id-token: write
     steps:
       - name: Check out the source code
         uses: actions/checkout@v4
