@@ -63,10 +63,6 @@ jobs:
         run: pip install .
         shell: bash
 
-      - name: Install Python packages
-        run: pip install git+https://github.com/bartfeenstra/betty@0.4.x
-        shell: bash
-
       - name: Generate the demonstration site
         run: betty demo -vv --path ./demo --url https://bartfeenstra.github.io/betty-demo
         shell: bash
