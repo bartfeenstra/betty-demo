@@ -1,0 +1,11 @@
+# Virtual environments.
+/.tox
+/venv
+
+# Python build artifacts.
+__pycache__
+/betty_demo.egg-info
+/build
+/dist
+*.pyc
+*.pyc.*
