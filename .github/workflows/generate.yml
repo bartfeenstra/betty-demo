@@ -65,7 +65,7 @@ jobs:
         shell: bash
 
       - name: Generate the demonstration site
-        run: betty demo -vv --path ./demo
+        run: betty demo -vv --path ./demo --url https://bartfeenstra.github.io/betty-demo
         shell: bash
 
       - name: Upload the demonstration site
