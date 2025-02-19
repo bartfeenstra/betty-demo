@@ -6,7 +6,7 @@ on:
       - 'main'
 
 jobs:
-  setuptools:
+  generate:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -49,8 +49,6 @@ jobs:
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
-        with:
-          node-version-file: ./package.json
 
       - name: Install APT dependencies
         run: sudo apt-get install poppler-utils
